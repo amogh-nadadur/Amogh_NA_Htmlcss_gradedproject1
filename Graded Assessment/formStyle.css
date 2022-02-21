@@ -1,0 +1,51 @@
+*{
+    border: none;
+    box-sizing: border-box;
+}
+
+input{
+    padding: 10px;
+    border-bottom: 1px solid black;
+    font-size: 1.25vw;
+}
+
+h3{
+    font-size: 1.5vw;
+}
+
+.container{
+    font-size: 1vw;
+    overflow: scroll;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    position: absolute;
+    left: 15%;
+    top: 10%;
+    box-shadow: 0 0 5px 2px rgb(112, 95, 95);
+}
+
+.formclass{
+    padding: 20px;
+    width: 60%;
+}
+
+.imageclass img{
+    position: fixed;
+    top:10%;
+    right: 16%;
+    width: 30%;
+    height: 60%;
+}
+
+.submitClass{
+    position: absolute;
+    top: 80%;
+    left: 45%;
+}
+
+.submitClass input{
+    background-color: rgb(145, 64, 145);
+    color: white;
+}

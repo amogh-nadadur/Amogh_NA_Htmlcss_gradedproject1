@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <title>Pharmacy Website</title>
+    </head>
+    <header>
+        <div id="head">
+            <h1>Pharmacy</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li id="hoverItem"><a href="#">Our Medicines</a>
+                    <ul class="dropdown">
+                        <a href="#">Fever</a>
+                        <a href="#">Muscle Pains</a>
+                        <a href="#">Cold & Cough</a>
+                    </ul>
+                </li>
+                <li id="hoverItem"><a href="#">Health Care</a>
+                    <ul class="dropdown">
+                        <a href="#">Baby Care</a>
+                        <a href="#">Skin Care</a>
+                        <a href="#">Home Care</a>
+                        <a href="#">Personal Care</a>
+                        <a href="#">Pet Care</a>
+                    </ul>
+                </li>
+                <li><a href="PatientForm.html" target="_blank">Lab Test</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <body>
+        <div class = "Slideshow-MainDiv">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                <img src="\Images\Animation\ani1.jpg"">
+                </div>
+                
+                <div class="mySlides fade">
+                <img src="\Images\Animation\ani2.png"">
+                </div>
+                
+                <div class="mySlides fade">
+                <img src="\Images\Animation\ani3.jpg"">
+                </div>
+            </div>
+                
+            <div style="text-align:center">
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+            </div>
+        </div>
+
+        <div class="section-container">
+            <p class="pC">Covid Care</p>
+            <div id="section">
+                <div class="card">
+                    <p>Covid Test Kit</p>
+                    <img src="\Images\Products\c1.jpg" alt="Avatar">
+                    <div class="container">
+                        <p>Rs 40/-</p>
+                        <p>Offer: Rs 30/-</p>
+                    </div>
+                    <button type="button"><a href="#">Add To Cart</a></button>
+                </div>
+
+                <div class="card">
+                    <p>Covid Essentials</p>
+                    <img src="\Images\Products\c2.jpg" alt="Avatar">
+                    <div class="container">
+                        <p>Rs 240/-</p>
+                        <p>Offer: Rs 170/-</p>
+                    </div>
+                    <button type="button"><a href="#">Add To Cart</a></button>
+                </div>
+
+                <div class="card">
+                    <p>Sanitizer Bottle</p>
+                    <img src="\Images\Products\c3.jpg" alt="Avatar">
+                    <div class="container">
+                        <p>Rs 99/-</p>
+                        <p>Offer: Rs 87/-</p>
+                    </div>
+                    <button type="button"><a href="#">Add To Cart</a></button>
+                </div>
+
+                <div class="card">
+                    <p>Covid Test Kit</p>
+                    <img src="\Images\Products\c4.jpg" alt="Avatar">
+                    <div class="container">
+                        <p>Rs 45/-</p>
+                        <p>Offer: Rs 30/-</p>
+                    </div>
+                    <button type="button"><a href="#">Add To Cart</a></button>
+                </div>
+
+                
+        </div>
+
+        <div>
+            <p class="pC">Diabetes Care</p>
+            <div id="section">
+
+                <div class="card">
+                    <p>Mask</p>
+                    <img src="\Images\Products\d1.jpg" alt="Avatar">
+                    <div class="container">
+                        <p>Rs 45/-</p>
+                        <p>Offer: Rs 30/-</p>
+                    </div>
+                    <button type="button"><a href="#">Add To Cart</a></button>
+                </div>
+
+                <div class="card">
+                    <p>Mask</p>
+                    <img src="\Images\Products\d2.jpg" alt="Avatar">
+                    <div class="container">
+                        <p>Rs 45/-</p>
+                        <p>Offer: Rs 30/-</p>
+                    </div>
+                    <button type="button"><a href="#">Add To Cart</a></button>
+                </div>
+
+                <div class="card">
+                    <p>Mask</p>
+                    <img src="\Images\Products\d3.jpg" alt="Avatar">
+                    <div class="container">
+                        <p>Rs 45/-</p>
+                        <p>Offer: Rs 30/-</p>
+                    </div>
+                    <button type="button"><a href="#">Add To Cart</a></button>
+                </div>
+
+                <div class="card">
+                    <p>Mask</p>
+                    <img src="\Images\Products\d4.png" alt="Avatar">
+                    <div class="container">
+                        <p>Rs 35/-</p>
+                        <p>Offer: Rs 30/-</p>
+                    </div>
+                    <button type="button"><a href="#">Add To Cart</a></button>
+                </div>
+            </div>
+                
+        </div>
+
+
+
+
+
+        <script>
+            var slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+            </script>
+    </body>
+
+
+
+
+
+
+
+
+    <footer>
+        <p>@copyright Only for documentation purpose</p>
+    </footer>
+</html>
+
+<!-- <div>
+    <img src="\Images\Animation\ani1.jpg" alt="Square-tailed kite">
+    <img src="\Images\Animation\ani2.png" alt="Osprey">
+    <img src="\Images\Animation\ani3.jpg" alt="Hawk">
+    <img src="\Images\Animation\ani4.jpg" alt="Osprey">
+    <img src="\Images\Animation\ani5.jpg" alt="Osprey">
+</div>
+
+<div>
+
+</div>
+<div>
+
+</div> -->
